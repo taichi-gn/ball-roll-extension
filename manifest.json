@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Ball Roll - Physics Fun",
+  "version": "1.0",
+  "description": "ページのボタンやリンクの上を物理演算でボールが転がります",
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Ball Roll"
+  },
+  "permissions": ["activeTab", "scripting"],
+  "host_permissions": ["<all_urls>"],
+  "web_accessible_resources": [
+    {
+      "resources": ["matter.min.js", "content.js"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}

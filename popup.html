@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    body {
+      width: 220px;
+      font-family: -apple-system, sans-serif;
+      padding: 16px;
+      margin: 0;
+    }
+    h1 { font-size: 15px; margin: 0 0 12px; }
+    button {
+      width: 100%;
+      padding: 10px;
+      margin: 4px 0;
+      border: none;
+      border-radius: 6px;
+      background: #3b82f6;
+      color: white;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    button:hover { background: #2563eb; }
+    .ghost {
+      background: white;
+      color: #3b82f6;
+      border: 1px solid #3b82f6;
+    }
+    .hint { font-size: 11px; color: #666; margin-top: 12px; line-height: 1.5; }
+  </style>
+</head>
+<body>
+  <h1>🎱 Ball Roll</h1>
+  <button id="start">ボールを落とす</button>
+  <button id="addMany" class="ghost">10個追加</button>
+  <button id="stop" class="ghost">リセット</button>
+  <div class="hint">
+    画面クリックでもボール追加。ボタンやリンクの上を転がります。
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
